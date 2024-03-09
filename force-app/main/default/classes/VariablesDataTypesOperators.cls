@@ -37,7 +37,7 @@ public with sharing class VariablesDataTypesOperators {
         }
         else {
            Integer  additionResult = a + b;
-             return additionResult; // Replace null with the variable you used to store the result
+             return additionResult;
         }
     }
 
@@ -55,7 +55,7 @@ public with sharing class VariablesDataTypesOperators {
          }  
         else {
             Integer subtractionResult = a - b;
-             return subtractionResult; // Replace null with the variable you used to store the result
+             return subtractionResult; 
          }
     }
 
@@ -73,7 +73,7 @@ public with sharing class VariablesDataTypesOperators {
        }
         else {
         Integer multiplicationResult = a * b;
-        return multiplicationResult; // Replace null with the variable you used to store the result
+        return multiplicationResult;
         }
     }
 
@@ -92,7 +92,7 @@ public with sharing class VariablesDataTypesOperators {
        }
        else {
         Double divisionResult = a / b;
-        return divisionResult; // Replace null with the variable you used to store the result
+        return divisionResult;
        }
     }
 
@@ -138,7 +138,8 @@ public with sharing class VariablesDataTypesOperators {
      * @return The concatenated string.
      */
     public static String concatenateStrings(String str1, String str2) {
-        return null; // Replace null with the variable you used to store the result
+        string str3 = str1 +str2;
+        return str3;
     }
 
 	/**
