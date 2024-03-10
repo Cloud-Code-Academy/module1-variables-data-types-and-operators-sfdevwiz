@@ -311,7 +311,7 @@ public with sharing class VariablesDataTypesOperators {
         // Write the code for type casting the divisionResult to an Integer
         Integer roundedResult = Math.round(divisionResult);
         return roundedResult;
-    }//wip
+    }//WIP
 
     /**
      * Question 18
@@ -339,7 +339,8 @@ public with sharing class VariablesDataTypesOperators {
      * @return A Decimal representing the monthly paycheck.
      */
     public static Decimal calculateMonthlyPaycheck(Decimal hourlyRate, Double numberOfHours) {
-        return null; // Replace null with the variable you used to store the result
+        Decimal monthlyPaycheck = (hourlyRate * numberOfHours) * 4;
+        return monthlyPaycheck;
     }
 
     /**
