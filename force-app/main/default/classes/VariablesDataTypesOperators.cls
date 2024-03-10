@@ -181,14 +181,14 @@ public with sharing class VariablesDataTypesOperators {
      * @return True if the date is today or in the future, False otherwise.
      */
     public static Boolean isDateTodayOrFuture(Date dt) {
-      Boolean dateInFuture = true;
-      Boolean dateInPast = false;
-        if (dt >= Date.today()){
-            return dateInFuture;
-        } else {
-            return dateInPast;
-        } 
-    }
+         if (dt >= date.today()) {
+             return true;
+         }
+         else {
+            return false;
+            }
+     } //WIP test passes sometimes and fails others based on null exceptions?
+        
 
     /**
      * Question 11
@@ -216,15 +216,14 @@ public with sharing class VariablesDataTypesOperators {
      * @return The average of the three numbers.
      */
     public static Double averageOfThreeNumbers(Integer a, Integer b, Integer c) {
-        Integer[] sum = new Integer[] {a, b, c};
-        Integer total = 0;
-        Double average;
-        for (Integer i : sum) {
-            total += 1;
+         if (a != null && b != null && c != null) {
+            return (a + b + C) / 3;
+         }
+        else {
+            return null;
+            }
         }
-        average = (a + b + c)/sum.size();
-        return average; //make cleaner? wip
-    }
+
 
     /**
      * Question 13
@@ -354,6 +353,7 @@ public with sharing class VariablesDataTypesOperators {
      * @return The total cost after applying the sales tax.
      */
     public static Decimal calculateTotalCost(Decimal pricePerUnit, Integer numberOfUnits, Decimal salesTaxRate) {
-        return null; // Replace null with the variable you used to store the result
+        Decimal totalCost = (pricePerUnit * numberOfUnits) * (1 + salesTaxRate);
+        return totalCost; // Replace null with the variable you used to store the result
     }
 }
