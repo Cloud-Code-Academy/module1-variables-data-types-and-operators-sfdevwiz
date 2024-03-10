@@ -306,12 +306,12 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Integer performDivisionAndCast(Double a, Double b) {
         // Perform the division and cast (round down) off the result.
-        Double divisionResult = null;
+        Double divisionResult = Double.valueOf(a) / Double.valueOf(b);
 
         // Write the code for type casting the divisionResult to an Integer
-        Integer roundedResult = null;
-        return null; // Replace null with the variable you used to store the result
-    }
+        Integer roundedResult = Math.round(divisionResult);
+        return roundedResult;
+    }//wip
 
     /**
      * Question 18
@@ -323,8 +323,9 @@ public with sharing class VariablesDataTypesOperators {
      * @return A Decimal representing the weekly paycheck.
      */
     public static Decimal calculateWeeklyPaycheck(Decimal hourlyRate, Double numberOfHours) {
+       Decimal weeklyPaycheck = hourlyRate * numberOfHours;
         // Calculate the weekly paycheck using the formula: rate multiplied by hours
-        return null; // Replace null with the variable you used to store the result
+        return weeklyPaycheck; // Replace null with the variable you used to store the result
     }
 
     /**
