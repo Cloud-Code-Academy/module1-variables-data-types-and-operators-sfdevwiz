@@ -181,7 +181,13 @@ public with sharing class VariablesDataTypesOperators {
      * @return True if the date is today or in the future, False otherwise.
      */
     public static Boolean isDateTodayOrFuture(Date dt) {
-        return null; // Replace null with the variable you used to store the result
+      Boolean dateInFuture = true;
+      Boolean dateInPast = false;
+        if (dt >= Date.today()){
+            return dateInFuture;
+        } else {
+            return dateInPast;
+        } 
     }
 
     /**
